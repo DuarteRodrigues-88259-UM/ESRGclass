@@ -18,13 +18,17 @@ Notes:
 
 
 Start TCP Server
+
 ./server.elf port               (Host/Target)
 
 Start TCP Client
+
 ./deamon.elf ip port            (Host)
+
 ./daemon_rasp.elf ip port       (Target)
 
 Client Send/Receive Messages    (Host/Target)
+
 ./client (msg)
 
 Communication scheme
