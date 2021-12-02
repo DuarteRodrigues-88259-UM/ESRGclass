@@ -24,6 +24,7 @@ Options
 
 # Done by
 João Miranda 88237
+
 Duarte Rodrigues 88259
 
 Masters in Embedded Systems @ Universidade do Minho, 2021
