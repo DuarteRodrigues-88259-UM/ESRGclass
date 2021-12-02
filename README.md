@@ -12,3 +12,5 @@
  - every time a client send a message the server send the same message to all client
  - every 5 sec server checks the state client (message doesn't appear on chat)
  - if client didn't send a message in last minute changes his state from ONLINE to AFK
+ - led on when client is ready to send/receive messages
+ - led off when client is not ready to send/receive messages
