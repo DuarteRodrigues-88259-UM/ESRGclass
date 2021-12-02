@@ -17,21 +17,21 @@ Notes:
     IP          Raspberry IP
 
 
-Start TCP Server
+Start TCP Server:
 
 ./server.elf port               (Host/Target)
 
-Start TCP Client
+Start TCP Client:
 
 ./deamon.elf ip port            (Host)
 
 ./daemon_rasp.elf ip port       (Target)
 
-Client Send/Receive Messages    (Host/Target)
+Client Send/Receive Messages: 
 
-./client (msg)
+./client (msg)                  (Host/Target)
 
-Communication scheme
+Communication scheme.
 
 [Server] <---TCP----> [Deamon] <----MQUEUE-----> [Client]
 
