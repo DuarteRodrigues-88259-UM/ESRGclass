@@ -1,12 +1,25 @@
 # ESRGclass
 
+Execute Makefile
+
+Make all        Compile and generate the object files
+Make clean      Delete the object files
+Make transfer   Copy the file to raspeberry
+
+Notes:
+    CC_r        Raspberry Compiler 
+    CC_h        Host Compiler
+    IP          Raspberry IP
+
+
 Start TCP Server
-./server.elf port
+./server.elf port               (Host/Target)
 
 Start TCP Client
-./deamon.elf ip port
+./deamon.elf ip port            (Host)
+./daemon_rasp.elf ip port       (Target)
 
-Client Send/Receive Messages
+Client Send/Receive Messages    (Host/Target)
 ./client (msg)
 
 Communication scheme
