@@ -1,12 +1,12 @@
 # ESRGclass
 
-# Start Server
+Start Server
 ./tcpserver.elf port
 
-# Star Client
+Star Client
 ./tcpclient.elf ip port (str)
 
-# Options
+Options
  - send messages server/client:	<"message">
  - close server/client connection: ctrl+c | "close"
  - every time a client send a message the server send the same message to all client
