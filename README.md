@@ -1,10 +1,10 @@
 # ESRGclass
 
 # Start Server
-./tcpserver.elf <port>
+./tcpserver.elf port
 
 # Star Client
-./tcpclient.elf <ip> <port> (<"str">)
+./tcpclient.elf ip port (str)
 
 # Options
  - send messages server/client:	<"message">
