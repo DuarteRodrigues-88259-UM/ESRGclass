@@ -11,25 +11,22 @@ Make transfer   Copy the file to raspeberry
 Notes:
 
     CC_r        Raspberry Compiler 
-    
     CC_h        Host Compiler
-    
     IP          Raspberry IP
 
 
 Start TCP Server:
 
-./server.elf port               (Host/Target)
+    ./server.elf port               (Host/Target)
 
 Start TCP Client:
 
-./deamon.elf ip port            (Host)
-
-./daemon_rasp.elf ip port       (Target)
+    ./deamon.elf ip port            (Host)
+    ./daemon_rasp.elf ip port       (Target)
 
 Client Send/Receive Messages: 
 
-./client (msg)                  (Host/Target)
+    ./client (msg)                  (Host/Target)
 
 Communication scheme.
 
