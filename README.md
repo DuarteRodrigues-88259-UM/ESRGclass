@@ -21,3 +21,9 @@ Options
  - if client didn't send a message in last minute changes his state from ONLINE to AFK
  - led on when client daemon is alive
  - led off when client daemon is dead
+
+# Done by
+João Miranda 88237
+Duarte Rodrigues 88259
+
+Masters in Embedded Systems @ Universidade do Minho, 2021
