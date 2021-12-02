@@ -33,6 +33,7 @@ Communication scheme
     [Server] <---TCP----> [Deamon] <----MQUEUE-----> [Client]
 
 Options
+
     send messages server/client: <"message">
     close server/client connection: ctrl+c | "close"
     every time a client send a message the server send the same message to all client
