@@ -1,25 +1,26 @@
-CC_r = arm-linux-gcc
-CC_h=gcc
-IP = 10.42.0.160
+#------------Execute others Makefiles -> action: ALL-----------------
+all: 
+	$(MAKE) all -C Client ;\
+	$(MAKE) all -C Server
 
-CFLAGS = -pthread -lrt
-OBJS = client.elf
+.PHONY: $(SUBDIRS)
 
-daemon: daemon.c ucmd.c
-	$(CC_h) -pthread -o daemon.elf daemon.c ucmd.c $(CFLAGS)
-	$(CC_r) -pthread -o daemon_rasp.elf daemon.c ucmd.c $(CFLAGS)
+#------------Execute others Makefiles -> action: CLEAN-----------------
+clean: 
+	$(MAKE) clean -C Client ;\
+	$(MAKE) clean -C Server
 
-server: server.c ucmd.c
-	$(CC_h) -pthread -o server.elf server.c ucmd.c $(CFLAGS)
+.PHONY: $(SUBDIRS)
 
-$(OBJS): %.elf: %.c
-	$(CC_r) -o $@ $< $(CFLAGS)
+#------------Execute others Makefiles -> action: TRANSFER-----------------
+transfer_client:
+	$(MAKE) transfer_client -C Client
 
-all:$(OBJS) server daemon
+#------------Execute others Makefiles -> action: TRANSFER-----------------
+transfer_server:
+	$(MAKE) transfer_server -C Server
 
-transfer: 
-	scp client.elf daemon_rasp.elf root@$(IP):/etc
-
-.PHONY: clean
-clean:
-	rm -rf $(OBJS) *.elf
+#------------Execute others Makefiles -> action: TRANSFER-----------------
+transfer_both:
+	$(MAKE) transfer_client -C Client
+	$(MAKE) transfer_server -C Server
